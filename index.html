@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vila do Movimento</title>
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between;">
+        <a href="index.html">Vila do Movimento</a>
+        <a href="blog.html">Blog</a>
+    </header>
+    <main>
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <h1>Bem-vindo(a) à Vila do Movimento</h1>
+                <br>
+                <p>Transforme sua vida com saúde, bem-estar e propósito. Aqui, acreditamos que cada passo conta para uma jornada de equilíbrio e felicidade.</p>
+            </div>
+        
+            <div class="cta" style="display: block; justify-content: center; gap: 50px; align-items: center;">
+                <a href="consultoria.html">Consultoria on-line</a>
+                <br>
+                <br>
+                <br>
+                <a href="desafio.html">Participe do Desafio de 21 Dias</a>
+            </div>
+        </div>
+    </main>
+    <footer style="display:block; align-items: center; justify-content: center;">
+        <p>"O movimento é o início de toda transformação."</p>
+        <div class="social-icons" style="display: block; justify-content: center; gap: 10px;">
+            <a href="https://www.facebook.com/gabimonteiropersonal" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/gabimonteiropersonal" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@gabimonteiropersonal" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <br>
+        <p>© Todos os direitos reservados.</p>
+    </footer>
+</body>
+<style>
+    /* Responsividade específica para index.html */
+
+/* Estilo principal para o layout flexível */
+main {
+    display: flex;
+    flex-direction: column; /* Altera para coluna em telas menores */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ajusta o texto da seção de boas-vindas */
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 600px; /* Limita o texto para melhor legibilidade */
+}
+
+/* Seções de CTA */
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #9457a7;
+    border: 2px solid #9457a7;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    max-width: 300px; /* Define um limite para botões */
+}
+
+.cta a:hover {
+    background-color: #9457a7;
+    color: #fff;
+}
+
+/* Media Queries para tornar o layout responsivo */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1.5rem;
+    }
+
+    main div {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .cta a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .cta a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .cta a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+</style>
+</html>
